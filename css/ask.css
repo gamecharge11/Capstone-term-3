@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+*:focus {
+    outline: 3px solid rgb(98, 200, 255);
+}
+
+:root {
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+}
+
+.nav {
+    height: 60px;
+    width: 100vw;
+    background-color: #87DAFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 21px;
+}
+
+.nav .left .logo-nav {
+    width: 300px;
+}
+
+.right {
+    margin-right: 21px;
+    font-size: 25px;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: rgb(198, 228, 255);
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(45deg, #6BC7FF, #80CEFE, #85D1FF, #81CFFF, #70C7FF);
+    overflow: hidden;
+}
+
+.btn {
+    font-weight: lighter;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #49b9ff;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.title {
+    color: white;
+    font-size: 3.5em;
+    font-weight: lighter;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.main {
+    height: (100vh - 60px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.left,
+.right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.7em;
+    color: white;
+}
+
+.title-inp,
+.description-inp,
+.code-inp {
+    background-color: #E4F4FF;
+    border-radius: 7px;
+    width: 850px;
+    border: none;
+    resize: none;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.title-inp {
+    height: 40px;
+}
+
+.description-inp {
+    height: 110px;
+}
+
+.code-inp {
+    height: 60px;
+}
+
+.label-inline {
+    display: inline;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.7em;
+    color: white;
+}
+
+select {
+    background-color: white;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 15%;
+    height: 30px;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    z-index: 1;
+    border-radius: 5px;
+}

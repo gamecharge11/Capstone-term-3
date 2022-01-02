@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+*:focus {
+    outline: 3px solid rgb(98, 200, 255);
+}
+
+:root {
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+}
+
+.nav {
+    height: 60px;
+    width: 100vw;
+    background-color: #87DAFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 21px;
+}
+
+.nav .left .logo-nav {
+    width: 300px;
+}
+
+.right {
+    margin-right: 21px;
+    font-size: 25px;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: rgb(198, 228, 255);
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(45deg, #6BC7FF, #80CEFE, #85D1FF, #81CFFF, #70C7FF);
+    overflow: hidden;
+}
+
+.main {
+    width: 100vw;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title {
+    font-size: 3.5em;
+    font-weight: lighter;
+    color: white;
+}
+
+.answer {
+    width: 70%;
+    height: 60%;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.submit {
+    width: fit-content;
+    height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 25px;
+    border: none;
+    background-color: #3BB0FF;
+}
+
+.btn {
+    font-weight: lighter;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #49b9ff;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}

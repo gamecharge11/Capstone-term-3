@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+
+*:focus {
+    outline: none;
+}
+
+.nav {
+    height: 60px;
+    width: 100vw;
+    background-color: #87DAFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 21px;
+}
+
+.nav .left .logo-nav {
+    width: 300px;
+}
+
+.right {
+    margin-right: 21px;
+    font-size: 25px;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: rgb(198, 228, 255);
+}
+
+body {
+    background: #70C7FF;
+    overflow-x: hidden;
+}
+
+.main {
+    width: 100vw;
+    height: calc(100vh - 60px);
+}
+
+.title {
+    font-size: 3.5em;
+    color: white;
+    font-weight: lighter;
+}
+
+.search {
+    width: 60%;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    color: black;
+    border-radius: 5px;
+}
+
+.top {
+    margin-left: 20px;
+}
+
+.questions {
+    margin-left: 20px;
+}
+
+.outer {
+    width: 70%;
+    height: 160px;
+    background-color: #31A6FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.btn {
+    font-weight: lighter;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #49b9ff;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.section-a {
+    margin-left: 20px;
+}
+
+.section-c {
+    margin-right: 20px;
+}
+
+.section-a p {
+    color: lime;
+}
+
+.section-c {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-c h2 {
+    font-weight: lighter;
+    margin-left: 30px;
+}
+
+.section-a .description {
+    width: 600px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: lighter;
+    font-size: 1.2em;
+}
+
+.section-a .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: lighter;
+    width: 500px;
+    font-size: 1.7em;
+}
+
+.av {
+    margin-left: 20px;
+}

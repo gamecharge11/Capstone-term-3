@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+*:focus {
+    outline: 3px solid rgb(98, 200, 255);
+}
+
+:root {
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+}
+
+.nav {
+    height: 60px;
+    width: 100vw;
+    background-color: #87DAFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 21px;
+}
+
+.nav .left .logo-nav {
+    width: 300px;
+}
+
+.right {
+    margin-right: 21px;
+    font-size: 25px;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: rgb(198, 228, 255);
+}
+
+body {
+    height: 100vh;
+    background: #70C7FF;
+    overflow-x: hidden;
+}
+
+.main {
+    width: 100vw;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top {
+    height: 70%;
+    width: 90%;
+    background-color: rgba(0, 132, 255, 0.157);
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+    color: white;
+    font-weight: lighter;
+}
+
+.title {
+    font-size: 2.3em;
+    font-weight: lighter;
+}
+
+.description {
+    font-size: 1.2em;
+}
+
+.av-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.av-group h3 {
+    white-space: nowrap;
+}
+
+.av {
+    width: 80px;
+}
+
+.bottom {
+    height: fit-content;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 90%;
+    background-color: rgba(0, 132, 255, 0.157);
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.group {
+    background-color: rgb(137, 198, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 95%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.answer {
+    padding-right: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 550px;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.sect {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sender {
+    display: flex;
+    align-items: center;
+}
